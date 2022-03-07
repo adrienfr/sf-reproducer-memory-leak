@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit flat #{{ flat.id }}{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h1>Edit flat #{{ flat.id }}</h1>
+    {{ form_start(form) }}
+        {{ form_row(form.status) }}
+        {{ form_row(form.submit) }}
+    {{ form_end(form) }}
+</div>
+{% endblock %}
